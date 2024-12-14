@@ -1,0 +1,234 @@
+
+/* .top-nav {
+  background-color: white;
+
+}
+
+.marquee span {
+  display: inline-block;
+  animation: scroll 10s linear infinite;
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+} */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 15px;
+}
+
+.logo {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links ul {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links ul li {
+  margin-left: 20px;
+}
+
+.nav-links ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.buttons {
+  display: flex;
+  gap: 1px;
+}
+
+.btn-primary,
+.btn-secondary {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: white;
+}
+
+.btn-secondary {
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Responsive for mobile devices */
+@media (max-width: 768px) {
+  .nav-links ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #333;
+    width: 100%;
+  }
+
+  .nav-links.active ul {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .buttons {
+    display: none;
+  }
+}
+
+
+
+.container {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 30px;
+  background-color:#28bad7;
+}
+
+.form-label {
+  font-weight: 500;
+  font-size: 1.1rem;
+  color: #495057;
+}
+
+.form-control {
+  font-size: 1rem;
+  padding: 0.75rem 1rem;
+  border-radius: 5px;
+  border: 1px solid #ced4da;
+  transition: border-color 0.2s ease-in-out;
+}
+
+.form-control:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.input-group-text {
+  background-color: #e9ecef;
+  font-size: 1rem;
+  padding: 0.75rem 1rem;
+}
+
+.select-box select,
+.form-select {
+  padding: 0.75rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ced4da;
+  transition: border-color 0.2s ease-in-out;
+}
+
+.form-select:focus {
+  border-color: #007bff;
+}
+
+.text-danger {
+  color: #dc3545;
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+}
+
+.form-check-input {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 0.25rem;
+}
+
+.form-check-label {
+  font-size: 1rem;
+  margin-left: 0.75rem;
+  color: #495057;
+}
+
+.btn {
+  font-size: 1rem;
+  padding: 0.75rem 1.25rem;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  .col-md-4,
+  .col-md-3,
+  .col-md-6 {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+/* Input validation styles */
+.ng-invalid.ng-touched .form-control {
+  border-color: #dc3545;
+  box-shadow: none;
+}
+
+.ng-invalid.ng-touched .form-control:focus {
+  border-color: #dc3545;
+  box-shadow: none;
+}
+
+.ng-valid.ng-touched .form-control {
+  border-color: #28a745;
+}
+
+.ng-valid.ng-touched .form-control:focus {
+  border-color: #28a745;
+}
+
+
+
+
+

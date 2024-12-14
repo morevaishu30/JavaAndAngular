@@ -1,0 +1,104 @@
+.top-nav {
+  background-color:white;
+ 
+}
+    .marquee span {
+      display: inline-block;
+      animation: scroll 10s linear infinite;
+     
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+  
+    body {
+      font-family: Arial, sans-serif;
+    }
+  
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #333;
+      padding: 15px;
+    }
+  
+    .logo {
+      color: white;
+      font-size: 24px;
+      font-weight: bold;
+    }
+  
+    .nav-links ul {
+      display: flex;
+      list-style: none;
+    }
+  
+    .nav-links ul li {
+      margin-left: 20px;
+    }
+  
+    .nav-links ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+    }
+  
+    .buttons {
+      display: flex;
+      gap: 1px;
+    }
+  
+    .btn-primary,
+    .btn-secondary {
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+    }
+  
+    .btn-primary {
+      background-color: #007bff;
+      color: white;
+    }
+  
+    .btn-secondary {
+      background-color: #f8f9fa;
+      color: #333;
+    }
+  
+    .menu-icon {
+      display: none;
+      font-size: 30px;
+      color: white;
+      cursor: pointer;
+    }
+  
+    /* Responsive for mobile devices */
+    @media (max-width: 768px) {
+      .nav-links ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #333;
+        width: 100%;
+      }
+  
+      .nav-links.active ul {
+        display: flex;
+      }
+  
+      .menu-icon {
+        display: block;
+      }
+  
+      .buttons {
+        display: none;
+      }
+    }
+   
+ 

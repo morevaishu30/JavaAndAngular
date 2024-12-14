@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!---Coding By CodingLab | www.codinglabweb.com--->
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+</head>
+
+<body>
+
+  <section class="container">
+    <header>Registration Form</header>
+    <form action="#" class="form">
+      <div class="input-box">
+        <label>First Name</label>
+        <input type="text" placeholder="Enter first name" required  maxlength="20"/>
+      </div>
+      <div class="input-box">
+        <label>Last Name</label>
+        <input type="text" placeholder="Enter last name" required />
+      </div>
+      <div class="input-box">
+        <label>Email Address</label>
+        <input type="text" placeholder="Enter email address" required />
+      </div>
+      <div class="column">
+        <div class="input-box">
+          <label>Phone Number</label>
+          <input type="number" placeholder="Enter phone number" required />
+        </div>
+        <div class="input-box">
+          <label>Birth Date</label>
+          <input type="date" placeholder="Enter birth date" required />
+        </div>
+      </div>
+      <div class="gender-box">
+        <h3>Gender</h3>
+        <div class="gender-option">
+          <div class="gender">
+            <input type="radio" id="check-male" name="gender" checked />
+            <label for="check-male">male</label>
+          </div>
+          <div class="gender">
+            <input type="radio" id="check-female" name="gender" />
+            <label for="check-female">Female</label>
+          </div>
+          <div class="gender">
+            <input type="radio" id="check-other" name="gender" />
+            <label for="check-other">prefer not to say</label>
+          </div>
+        </div>
+      </div>
+      <div class="input-box address">
+        <label>Address</label>
+        <input type="text" placeholder="Enter street address" required />
+
+        <div class="column">
+          <div class="select-box">
+            <select>
+              <option hidden>State</option>
+              <option>Andhra Pradesh</option>
+              <option>Arunachal Pradesh</option>
+              <option>Assam</option>
+              <option>Bihar</option>
+              <option>chhattisgarh</option>
+              <option>Goa</option>
+              <option>Gujarat</option>
+              <option>Haryana</option>
+              <option>Himachal Pradesh</option>
+              <option>Jharkhand</option>
+              <option>Karnataka</option>
+              <option>Kerala</option>
+              <option>Madhya pradesh</option>
+              <option>Maharasharta</option>
+              <option>Manipur</option>
+              <option>Meghalaya</option>
+              <option>Mizoram</option>
+              <option>Nagaland</option>
+              <option>Odisha</option>
+              <option>Punjab</option>
+              <option>Rajastan</option>
+              <option>Sikkim</option>
+              <option>Tamil Nadu</option>
+              <option>Telangana</option>
+              <option>tripura</option>
+              <option>Utter Pradesh</option>
+
+
+            </select>
+          </div>
+          <input type="text" placeholder="Enter your city" required />
+        </div>
+
+        <div class="column">
+          <div class="select-box">
+            <select>
+              <option hidden>Courses</option>
+              <option>Frentend Developer</option>
+              <option>Backend Developer</option>
+              <option>Full Stack Developer</option>
+            </select>
+          </div>
+          <input type="text" placeholder="Enter the branch" required />
+        </div>
+      </div>
+      <button>Submit</button>
+    </form>
+  </section>
+</body>
+
+</html>

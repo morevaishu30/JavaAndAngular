@@ -1,0 +1,54 @@
+<!-- <p>This is user profile</p>
+<h2>Name -{{name.toUpperCase()}} Status-{{status}} Salary-{{salary}} </h2>
+ //Proprty Binding -->
+<!-- <button [disabled]="isButtonDisabled">Click me</button>
+<br>
+<br>
+ always event write useing $ sign -->
+<!-- <input type="text" (input)="onChange($event)">  -->
+
+
+<!-- Two Way Data Binding -->
+<!-- <h2> input value -{{inputVal}}</h2>
+<input type="text" [value]="inputVal" (input)="onChanges($event)">
+<br>
+<br> -->
+<!-- second way to perfrom two way data binding -->
+<!-- In that time always import in componunt.ts file FormModule that time they will be work -->
+
+<!-- <h2> input value -{{inputVal}}</h2>
+<input type="text" [(ngModel)]="inputVal"> -->
+<!-- ngModel is Atrribute Directive -->
+
+
+<!-- Directive Example 1. For -->
+<!-- <div>
+  @for(user of users ;track user.name ){
+    @if (user.lastName=="Patil") {
+      <h3>Name -{{user.name}} LastNme - {{user.lastName}} Age-{{user.age}}</h3><br> <br>
+      }@else{
+         <h3>Name -{{user.name}}  LastNme - {{user.lastName}} Age-{{user.age}}</h3>
+      }
+  }
+  <hr>
+
+</div> -->
+<!-- useing directive that time 17 version import in ts file commonModule   -->
+<!-- Directive always used on element -->
+<!-- *ngIf ,*ngFor is structural Directive -->
+<!-- <div *ngFor="let user of users">
+    <h3 *ngIf="user.age== 24;else elseBlock">Name -{{user.name}} LastNme - {{user.lastName}} Age-{{user.age}}</h3>
+    <ng-template #elseBlock>
+      <br>
+        <h3>Name -{{user.name}} LastNme - {{user.lastName}} Age-{{user.age}}</h3>
+
+    </ng-template>
+
+
+</div> -->
+<!-- <h2>{{phoneno | countryCode:"USA"}}</h2> -->
+
+
+<h2 [style.backgroundColor]="bgColor">Name - {{name}} status-{{isSingle?"single":"Coder"}}</h2>
+<h2 appHighlight>Name - {{name}} status-{{isSingle?"single":"Coder"}}</h2>
+<button (click)="clear()">claer users</button>

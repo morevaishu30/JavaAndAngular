@@ -1,0 +1,406 @@
+<!-- 
+  <div style="display: flex; align-items: center; justify-content: space-between; padding: 20px; background-color: #043668;">
+
+ 
+    <img
+      src="../assets/images/programming-code-icon-3d-low-polygonal-abstract-programming-code-symbol-in-hand-coding-or-hacker-background-development-and-software-concept-illustration-vector (1).jpg"
+      alt="Programming Code Icon" style="width: 100%; height: auto; max-width: 900px;" />
+          <div class="first"
+        style="text-align: center; margin-left: 20px; display: flex; flex-direction: column; align-items: flex-end;">
+        <div style="margin-bottom: 20px; margin-right: 20px;">
+          <button (click)="setActiveButton('Button 1')"
+            style="padding: 10px 20px; margin: 5px; background-color: #4CAF50; color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 16px; transition: transform 0.2s;">
+            Java Developer
+          </button>
+          <button (click)="setActiveButton('Button 2')"
+            style="padding: 10px 20px; margin: 5px; background-color: #2196F3; color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 16px; transition: transform 0.2s;">
+            Angular Developer
+          </button>
+          <button (click)="setActiveButton('Button 3')"
+            style="padding: 10px 20px; margin: 5px; background-color: #FF5722; color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 16px; transition: transform 0.2s;">
+            SQL Developer
+          </button>
+          <button (click)="setActiveButton('Button 4')"
+            style="padding: 10px 20px; margin: 5px; background-color: #9C27B0; color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 16px; transition: transform 0.2s;">
+            Python Developer
+          </button>
+        </div>
+      <div>
+        <p *ngIf="activeButton === 'Button 1'"><span> Name:-Namo Shelke</span></p>
+        <p *ngIf="activeButton === 'Button 2'"><span>Manoj Attarde</span></p>
+        <p *ngIf="activeButton === 'Button 3'"><span>More Vaishnavi</span></p>
+        <p *ngIf="activeButton === 'Button 4'"><span>Rohit Sawant</span></p>
+      </div>
+    </div>
+  </div>
+
+
+
+ -->
+ 
+	<!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+
+<body>
+
+	<header id="home">
+	
+		<nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white px-4 border-bottom">
+  <div class="container-fluid">
+    <a class="navbar-brand fs-2" href="#">Techno-<span class="text-primary">web</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center fs-5">
+        <li class="nav-item">
+          <a class="nav-link active text-primary" aria-current="page" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Services
+          </a>
+          <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#services">SEO</a></li>
+            <li><a class="dropdown-item" href="#services">Web Design</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#services">Apps Design</a></li>
+          </ul>
+        </li>
+   				<li class="nav-item">
+          <a class="nav-link" href="#team">Our Team</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+     
+     
+    </div>
+  </div>
+
+</nav>
+
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="img/banner.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption  d-md-block">
+        <h5>First slide label</h5>
+       <p>Some representative placeholder content for the first slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="img/banner1.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption  d-md-block">
+    	    <h5>Second slide label</h5>
+        <p>Some representative placeholder content for the second slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="img/banner.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-md-block">
+        <h5>Third slide label</h5>
+        <p>Some representative placeholder content for the third slide.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+	</header>
+<!--header end-->
+
+<!---about section start--->
+
+	<section class="about my-5" id="about">
+		<div class="container">
+			<div class="mx-auto text-center my-5">
+				<h1  data-aos="fade-up-right" data-aos-offset="200">About <span class="text-primary">me</span> </h1>
+				<hr class="w-25 mx-auto" >
+			</div>
+			<div class="row">
+
+				<div class="col-lg-6 col-md-6 col-sm-12 col-12 p-4" data-aos="zoom-in-right" data-aos-offset="200">
+						<h1>What do you <span class="text-primary">want to know?</span></h1>
+					<p class="p-2" >Use our powerful mobile-first flexbox grid to build layouts of all shapes and sizes thanks to a twelve column system, six default responsive tiers, Sass variables and mixins, and dozens of predefined classes</p>
+	<button type="button" class="btn btn-light mb-5">More about me</button>
+		
+		<div class="accordion" id="accordionExample" data-aos="zoom-in" data-aos-offset="200" data-aos-delay="100">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        My Hobbies
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>This is the first item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+  		My Qualiflications
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element.
+      </div>
+    </div>
+  </div>
+   <div class="accordion-item">
+    <h2 class="accordion-header" id="headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+  		My Dreams
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element.
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+	</div>
+
+	<div class="col-lg-6 col-md-6 col-sm-12 col-12 p-4 m-auto text-end" data-aos="zoom-in-up" data-aos-offset="200">
+		<img src="img/s4.jpg" class="abimg img-fluid img-thumbnail">
+			
+	</div>
+			</div>
+		</div>
+	</section>
+
+<!---about section end--->
+
+
+
+
+<!---- our services start--->
+
+	<section class="services py-5 bg-light" id="services">
+		<div class="container">
+					<div class="mx-auto text-center my-5">
+				<h1  data-aos="zoom-in-down" data-aos-offset="200" data-aos-delay="100">Our <span class="text-primary">Services</span> </h1>
+				<hr class="w-25 mx-auto" >
+			</div>
+			<div class="row"  data-aos="fade-up" data-aos-offset="200">
+  <div class="col-sm-12 col-md-4 col-lg-4 col-12">
+    <div class="card">
+      <div class="card-body">
+     	<i class="fa fa-users bg-primary text-white p-2 rounded" aria-hidden="true"></i>
+        <h5 class="card-title">Graphics Design</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <a href="#" class="btn btn-primary">Book now!</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-12 col-md-4 col-lg-4 col-12">
+    <div class="card">
+      <div class="card-body bg-primary text-white">
+      	<i class="fa fa-code text-dark bg-white p-2 rounded" aria-hidden="true"></i>
+        <h5 class="card-title">Web Development</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <a href="#" class="btn btn-light">Book now!</a>
+      </div>
+    </div>
+  </div>
+   <div class="col-sm-12 col-md-4 col-lg-4 col-12">
+    <div class="card">
+      <div class="card-body">
+      	<i class="fa fa-cogs bg-primary text-white p-2 rounded" aria-hidden="true"></i>
+        <h5 class="card-title">App Development</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <a href="#" class="btn btn-primary">Book now!</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+	<div class="row mt-4"  data-aos="fade-up" data-aos-offset="200">
+  <div class="col-sm-12 col-md-4 col-lg-4 col-12">
+    <div class="card">
+      <div class="card-body">
+     	<i class="fa fa-users bg-primary text-white p-2 rounded" aria-hidden="true"></i>
+        <h5 class="card-title">SEO</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <a href="#" class="btn btn-primary">Book now!</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-12 col-md-4 col-lg-4 col-12">
+    <div class="card">
+      <div class="card-body bg-primary text-white">
+      	<i class="fa fa-code text-dark bg-white p-2 rounded" aria-hidden="true"></i>
+        <h5 class="card-title">Digital Marketing</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <a href="#" class="btn btn-light">Book now!</a>
+      </div>
+    </div>
+  </div>
+   <div class="col-sm-12 col-md-4 col-lg-4 col-12">
+    <div class="card">
+      <div class="card-body">
+      	<i class="fa fa-cogs bg-primary text-white p-2 rounded" aria-hidden="true"></i>
+        <h5 class="card-title">Web Design</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <a href="#" class="btn btn-primary">Book now!</a>
+      </div>
+    </div>
+  </div>
+</div>
+		</div>
+
+		
+	</section>
+<!---- our services end--->
+          
+
+<!--- our team start--->
+
+	<section class="our-team my-4 text-center" id="team">
+		    <div class="container">
+                  <div class="mx-auto text-center my-5">
+        <h1 data-aos="fade-up-left" >Our <span class="text-primary">Team</span> </h1>
+        <hr class="w-25 mx-auto" >
+      </div>
+
+        <div class="row">
+          <div class="col-sm-12 col-md-4 col-lg-4 col-12" >
+               <div class="card"  data-aos="zoom-in" data-aos-offset="200">
+      <div class="card-body">
+      <img src="img/s4.jpg" class="img-fluid img-thumbnail rounded-circle border border-primary">
+        <h5 class="card-title mt-4">Andrew </h5>
+        <p class="card-text">Front end Developer</p>
+        <a href="#" class="btn btn-primary">Read more</a>
+      </div>
+    </div>
+          </div>
+    <div class="col-sm-12 col-md-4 col-lg-4 col-12">
+               <div class="card"  data-aos="fade-up" data-aos-offset="200">
+      <div class="card-body">
+      <img src="img/s2.jpg" class="img-fluid img-thumbnail rounded-circle border border-primary">
+        <h5 class="card-title mt-4">Keren D'souza</h5>
+        <p class="card-text">App Developer</p>
+        <a href="#" class="btn btn-primary">Read more</a>
+      </div>
+    </div>
+          </div>
+              <div class="col-sm-12 col-md-4 col-lg-4 col-12">
+               <div class="card"  data-aos="zoom-in-up" data-aos-offset="200">
+      <div class="card-body">
+      <img src="img/s3.jpg" class="img-fluid img-thumbnail rounded-circle border border-primary">
+        <h5 class="card-title mt-4">Kristina</h5>
+        <p class="card-text">Full stack web Developer</p>
+        <a href="#" class="btn btn-primary">Read more</a>
+      </div>
+    </div>
+          </div>
+
+
+        </div>  
+        </div>
+	</section>
+<!--- our team end--->
+
+
+<!--contact start-->
+  <footer class="py-5" id="contact">
+    <div class="container">
+        <div class="mx-auto text-center my-5">
+        <h1 data-aos="fade-up" data-aos-offset="200">Feel free <span class="text-primary">to connect</span> </h1>
+        <hr  class="w-25 mx-auto" >
+      </div>
+
+      <div class="row p-4">
+        <div class="col-sm-12 col-md-6 col-lg-6" data-aos="fade-up-left" data-aos-offset="200">
+          <form class="row g-3">
+  <div class="col-md-6">
+    <label for="inputEmail4" class="form-label">Email</label>
+    <input type="email" class="form-control" id="inputEmail4" placeholder="Enter email">
+  </div>
+  <div class="col-md-6">
+    <label for="inputPassword4" class="form-label">Password</label>
+    <input type="password" class="form-control" id="inputPassword4" placeholder="Enter password">
+  </div>
+  <div class="col-12">
+    <label for="inputAddress" class="form-label">Address</label>
+    <input type="text" class="form-control" id="inputAddress" placeholder="Example : Near Golden temple..">
+  </div>
+ 
+  <div class="col-md-6">
+    <label for="inputCity" class="form-label">City</label>
+    <input type="text" class="form-control" id="inputCity" placeholder="City">
+  </div>
+  <div class="col-md-4">
+    <label for="inputState" class="form-label">State</label>
+    <select id="inputState" class="form-select">
+      <option selected>Choose...</option>
+      
+       <option>Uttar Pradesh</option>
+      <option>Rajasthan</option>
+      <option>Delhi</option>
+    </select>
+  </div>
+  <div class="col-md-2">
+    <label for="inputZip" class="form-label">Zip</label>
+    <input type="text" class="form-control" id="inputZip">
+  </div>
+  <div class="col-12">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="gridCheck">
+      <label class="form-check-label" for="gridCheck">
+        Check me out
+      </label>
+    </div>
+  </div>
+  <div class="col-12">
+    <button type="submit" class="btn btn-primary">Sign in</button>
+  </div>
+</form>
+        </div>
+
+
+        <div class="col-sm-12 col-md-6 col-lg-6 text-end m-auto p-4" data-aos="fade-up-right" data-aos-offset="200">
+            <img src="img/s6.jpg" class="img-fluid img-thumbnail p-2">  
+        </div>
+  
+      </div>
+  
+    </div>
+
+  </footer>
+<div class=" p-2 text-center bg-primary text-white container-fluid">
+    <h4>Developed by Vaishu More</h4>
+  </div>
+<!--contact end-->
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</body>
+

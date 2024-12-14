@@ -1,0 +1,24 @@
+<div class="container-fluid">
+
+
+  <table>
+    <tr>
+      <th>ID</th>
+      <th>Title</th>
+      <th>Price</th>
+      <th>Rating</th>
+      <th>Brand</th>
+      <th>Stock</th>
+    </tr>
+    <tr *For ="let product of products">
+      <td>{{products.id}}</td>
+      <td>{{product.title}}</td>
+      <td>{{product.price}}</td>
+      <td>{{product.rating}}
+      <td>
+      <td>{{product.brand }}</td>
+      <td>{{product.stock}}</td>
+    </tr>
+  </table>
+
+</div>
